@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi persona favorita 🌻</title>
+    <link rel="stylesheet" href="style.css?v=2.0">
+</head>
+<body>
+
+    <div id="hearts-container"></div>
+
+    <audio id="bg-music" loop>
+        <source src="audio/cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <header class="hero">
+        <h1>Para el amor de mi vida 🌻</h1>
+
+        <div class="audio-header-wrapper">
+            <img src="img/foto1.jpeg" alt="Foto principal" class="main-photo-large">
+            
+            <div class="spotify-player" id="music-btn">
+                <button class="spotify-play-btn">▶</button>
+                <div class="spotify-info">
+                    <span class="song-title">ONLY</span>
+                    <span class="song-artist">Lee Hi 🎵</span>
+                    <div class="spotify-bar-container">
+                        <div class="spotify-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timer-card">
+            <p class="timer-title">NUESTRA HISTORIA JUNTOS EMPEZO HACE</p>
+            <div id="timer" class="timer-display">Cargando tiempo...</div>
+        </div>
+    </header>
+
+    <main class="mural-container">
+
+        <aside class="polaroid-strip strip-left">
+            <div class="polaroid">
+                <img src="img/foto2.jpeg" alt="Momento 1">
+            </div>
+            <div class="polaroid">
+                <img src="img/foto3.jpeg" alt="Momento 2">
+            </div>
+            <div class="polaroid">
+                <img src="img/foto4.jpeg" alt="Momento 3">
+            </div>
+        </aside>
+
+        <section class="center-envelope-section">
+            <div class="vintage-envelope" id="envelope" onclick="openEnvelope()">
+                <div class="letter" id="letter">
+                    <span class="corner-heart top-left">❤️</span>
+                    <span class="corner-heart top-right">❤️</span>
+                    <span class="corner-heart bottom-left">❤️</span>
+                    <span class="corner-heart bottom-right">❤️</span>
+                    
+                    <div class="letter-body">
+                        <p>TE AMO MIAMOR GACIAS POR TODO LOS MOMENTOS JUNTOS, POR ESTAR SIEMPRE A MI LADO Y AMARME CON LOCURA, TE AMO MUCHISIMO Y ESTA PAGINA QUEDARA PARA SIEMPRE PARA DEMOSTRARTELO.</p>
+                    </div>
+                </div>
+
+                <div class="envelope-pocket"></div>
+                <div class="envelope-flap"></div>
+                <div class="seal">🌻</div>
+            </div>
+        </section>
+
+        <aside class="polaroid-strip strip-right">
+            <div class="polaroid">
+                <img src="img/foto5.jpeg" alt="Momento 4">
+            </div>
+            <div class="polaroid">
+                <img src="img/foto6.jpeg" alt="Momento 5">
+            </div>
+            <div class="polaroid">
+                <img src="img/foto7.jpeg" alt="Momento 6">
+            </div>
+        </aside>
+
+    </main>
+
+    <script src="script.js?v=2.0"></script>
+</body>
+</html>
